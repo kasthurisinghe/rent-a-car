@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="354.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.car_hire.controller.CreateUserController">
+<AnchorPane fx:id="root" prefHeight="354.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.car_hire.controller.CreateUserController">
    <children>
       <ImageView fitHeight="309.0" fitWidth="600.0" layoutY="45.0" opacity="0.33">
          <image>
@@ -56,8 +56,11 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label alignment="CENTER_RIGHT" layoutX="13.0" layoutY="273.0" prefHeight="18.0" prefWidth="96.0" text="New Password" />
-      <Button layoutX="11.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #B71C1C;" text="Back">
+      <Label alignment="CENTER_RIGHT" layoutX="13.0" layoutY="273.0" prefHeight="18.0" prefWidth="96.0" text="New Password">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button layoutX="11.0" layoutY="15.0" mnemonicParsing="false" onAction="#btnClickOnBack" style="-fx-background-color: #B71C1C;" text="Back">
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font>
@@ -65,18 +68,39 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button layoutX="481.0" layoutY="310.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #27ae60;" text="Create User">
+      <Button layoutX="481.0" layoutY="310.0" mnemonicParsing="false" onAction="#btnClickOncreate" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #27ae60;" text="Create User">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TextField layoutX="128.0" layoutY="58.0" />
-      <TextField layoutX="128.0" layoutY="88.0" prefHeight="26.0" prefWidth="302.0" />
-      <TextField layoutX="128.0" layoutY="117.0" prefHeight="26.0" prefWidth="302.0" />
-      <TextField layoutX="128.0" layoutY="149.0" prefHeight="26.0" prefWidth="203.0" />
-      <TextField layoutX="128.0" layoutY="178.0" prefHeight="26.0" prefWidth="302.0" />
-      <TextField layoutX="128.0" layoutY="208.0" prefHeight="26.0" prefWidth="54.0" />
-      <TextField layoutX="128.0" layoutY="240.0" />
-      <TextField layoutX="128.0" layoutY="269.0" prefHeight="26.0" prefWidth="152.0" />
+      <TextField fx:id="txtId" layoutX="128.0" layoutY="58.0" promptText="User ID">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtFirst" layoutX="128.0" layoutY="88.0" prefHeight="26.0" prefWidth="302.0" promptText="FIrst Name">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtxLast" layoutX="128.0" layoutY="117.0" prefHeight="26.0" prefWidth="302.0" promptText="Last Name" />
+      <TextField fx:id="txtNic" layoutX="128.0" layoutY="149.0" prefHeight="26.0" prefWidth="203.0" promptText="NIC No.">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtAddress" layoutX="128.0" layoutY="178.0" prefHeight="26.0" prefWidth="302.0" promptText="Address">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtAge" layoutX="128.0" layoutY="208.0" prefHeight="26.0" prefWidth="54.0" promptText="Age">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtPhone" layoutX="128.0" layoutY="240.0" promptText="XXX-XX XXX XX">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtPassw" layoutX="128.0" layoutY="269.0" prefHeight="26.0" prefWidth="152.0" promptText="Password">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font></TextField>
    </children>
 </AnchorPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.car_hire.controller.CarFormController">
+   <children>
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="18.0" prefHeight="18.0" prefWidth="66.0" text="ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="45.0" prefHeight="18.0" prefWidth="66.0" text="Model">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="14.0" layoutY="72.0" prefHeight="18.0" prefWidth="66.0" text="Brand">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="264.0" layoutY="19.0" prefHeight="18.0" prefWidth="114.0" text="Vehicle Number">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="264.0" layoutY="45.0" text="Manufactured Year">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="265.0" layoutY="71.0" prefHeight="18.0" prefWidth="114.0" text="Price per Day">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField layoutX="392.0" layoutY="15.0" />
+      <TextField layoutX="93.0" layoutY="41.0" />
+      <TextField layoutX="93.0" layoutY="68.0" />
+      <TextField layoutX="93.0" layoutY="14.0" />
+      <TextField layoutX="392.0" layoutY="41.0" />
+      <TextField layoutX="392.0" layoutY="67.0" />
+      <AnchorPane layoutX="-1.0" layoutY="101.0" prefHeight="296.0" prefWidth="601.0">
+         <children>
+            <TableView layoutX="1.0" layoutY="-1.0" prefHeight="296.0" prefWidth="600.0">
+              <columns>
+                <TableColumn prefWidth="59.0" text="ID" />
+                <TableColumn prefWidth="148.0" text="Vehicle Number" />
+                  <TableColumn prefWidth="73.0" text="Model" />
+                  <TableColumn prefWidth="116.0" text="Manufactured Year" />
+                  <TableColumn prefWidth="103.0" text="Brand" />
+                  <TableColumn prefWidth="100.0" text="Price Per day" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

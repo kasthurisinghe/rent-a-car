@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.car_hire.controller.RentFormController">
+   <children>
+      <Label layoutX="8.0" layoutY="8.0" text="Rental Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="15.0" layoutY="37.0" prefHeight="18.0" prefWidth="76.0" text="ID" />
+      <Label alignment="CENTER_RIGHT" layoutX="262.0" layoutY="44.0" text="Per-day Rent" />
+      <Label alignment="CENTER_RIGHT" layoutX="15.0" layoutY="62.0" prefHeight="18.0" prefWidth="76.0" text="Advance" />
+      <Label alignment="CENTER_RIGHT" layoutX="262.0" layoutY="71.0" prefHeight="18.0" prefWidth="76.0" text="From-date" />
+      <Label alignment="CENTER_RIGHT" layoutX="15.0" layoutY="89.0" prefHeight="18.0" prefWidth="76.0" text="To-date" />
+      <Label alignment="CENTER_RIGHT" layoutX="262.0" layoutY="98.0" prefHeight="18.0" prefWidth="76.0" text="Total" />
+      <Label alignment="CENTER_RIGHT" layoutX="16.0" layoutY="115.0" text="Customer ID" />
+      <Label alignment="CENTER_RIGHT" layoutX="262.0" layoutY="124.0" prefHeight="18.0" prefWidth="76.0" text="Balance" />
+      <Label alignment="CENTER_RIGHT" layoutX="9.0" layoutY="148.0" text="Refundable Deposit" />
+      <TextField layoutX="98.0" layoutY="32.0" />
+      <TextField layoutX="351.0" layoutY="33.0" />
+      <TextField layoutX="98.0" layoutY="58.0" />
+      <TextField layoutX="351.0" layoutY="58.0" />
+      <TextField layoutX="98.0" layoutY="85.0" />
+      <TextField layoutX="351.0" layoutY="85.0" />
+      <TextField layoutX="98.0" layoutY="111.0" />
+      <TextField layoutX="351.0" layoutY="111.0" />
+      <TextField layoutX="140.0" layoutY="144.0" />
+      <AnchorPane layoutY="176.0" prefHeight="223.0" prefWidth="600.0">
+         <children>
+            <TableView layoutX="-1.0" layoutY="-1.0" prefHeight="223.0" prefWidth="600.0">
+              <columns>
+                <TableColumn prefWidth="49.0" text="ID" />
+                <TableColumn text="Per-day Rent" />
+                  <TableColumn prefWidth="60.0" text="Advance" />
+                  <TableColumn prefWidth="66.0" text="From-date" />
+                  <TableColumn prefWidth="53.0" text="To-date" />
+                  <TableColumn prefWidth="43.0" text="Total" />
+                  <TableColumn prefWidth="78.0" text="Customer ID" />
+                  <TableColumn prefWidth="66.0" text="Balance" />
+                  <TableColumn prefWidth="104.0" text="Refundable Deposit" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

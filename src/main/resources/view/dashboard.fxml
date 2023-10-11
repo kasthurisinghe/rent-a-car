@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootNode" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.car_hire.controller.Dashboard">
+   <children>
+      <Label fx:id="labTitle" layoutX="7.0" layoutY="7.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="116.0" mnemonicParsing="false" onAction="#btncCickOnCustomer" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #9b59b6;" text="Customer" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="14.0" layoutY="162.0" mnemonicParsing="false" onAction="#btnClickOnCar" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #27ae60;" text="Car" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="14.0" layoutY="210.0" mnemonicParsing="false" onAction="#btnClickOnCarCategory" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #c0392b;" text="Car Category" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="15.0" layoutY="255.0" mnemonicParsing="false" onAction="#btnClickOnRent" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #34495e;" text="Rent" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnClickOnExit" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" style="-fx-background-color: #f1c40f;" text="Exit">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="baseNode" layoutX="113.0" layoutY="49.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.44">
+               <image>
+                  <Image url="@../image/website-navigation.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="173.0" layoutY="99.0" text="Welcome !">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="170.0" prefHeight="60.0" prefWidth="254.0" text="You can press any button on your right hand side  for navigate to desired form..." wrapText="true">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

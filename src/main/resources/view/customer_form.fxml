@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootCustomer" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.car_hire.controller.CustomerFormController">
+   <children>
+      <ImageView fitHeight="171.0" fitWidth="600.0" opacity="0.25">
+         <image>
+            <Image url="@../image/happy customer gets car_2.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="15.0" layoutY="16.0" text="ID" />
+      <Label layoutX="15.0" layoutY="49.0" text="Address" />
+      <Label layoutX="15.0" layoutY="82.0" text="Mobile No." />
+      <Label layoutX="273.0" layoutY="17.0" text="Name" />
+      <Label layoutX="273.0" layoutY="49.0" text="NIC" />
+      <TextField layoutX="80.0" layoutY="14.0" prefHeight="26.0" prefWidth="119.0" />
+      <TextField layoutX="80.0" layoutY="45.0" prefHeight="26.0" prefWidth="179.0" />
+      <TextField layoutX="80.0" layoutY="78.0" prefHeight="26.0" prefWidth="179.0" />
+      <TextField layoutX="327.0" layoutY="14.0" prefHeight="26.0" prefWidth="254.0" />
+      <TextField layoutX="327.0" layoutY="45.0" prefHeight="26.0" prefWidth="190.0" />
+      <TableView layoutY="172.0" prefHeight="229.0" prefWidth="600.0">
+        <columns>
+          <TableColumn prefWidth="55.0" text="ID" />
+          <TableColumn prefWidth="176.0" text="Name" />
+            <TableColumn prefWidth="140.0" text="Address" />
+            <TableColumn prefWidth="103.0" text="NIC" />
+            <TableColumn minWidth="0.0" prefWidth="124.0" text="Mobile No." />
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="128.0" mnemonicParsing="false" style="-fx-background-color: #9b59b6;" text="Back" />
+      <Button layoutX="533.0" layoutY="128.0" mnemonicParsing="false" style="-fx-background-color: #27ae60;" text="Save" />
+      <Button layoutX="463.0" layoutY="128.0" mnemonicParsing="false" style="-fx-background-color: #c0392b;" text="Delete" />
+      <Button layoutX="395.0" layoutY="128.0" mnemonicParsing="false" style="-fx-background-color: #f1c40f;" text="Update" />
+      <Button layoutX="327.0" layoutY="128.0" mnemonicParsing="false" style="-fx-background-color: #34495e;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
