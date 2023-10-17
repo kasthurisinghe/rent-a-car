@@ -37,8 +37,6 @@
             <version>1.18.30</version>
             <scope>provided</scope>
         </dependency>
-
-
         <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
         <dependency>
             <groupId>jakarta.xml.bind</groupId>
@@ -57,7 +55,6 @@
             <artifactId>hibernate-core</artifactId>
             <version>5.6.5.Final</version>
         </dependency>
-
 
     </dependencies>
 
