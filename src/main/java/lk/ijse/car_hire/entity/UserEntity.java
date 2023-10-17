@@ -6,8 +6,10 @@ package lk.ijse.car_hire.entity;
 
 import lk.ijse.car_hire.entity.embedded.UserName;
 import lombok.*;
+import org.hibernate.annotations.CollectionId;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "userAdmin")
@@ -37,4 +39,12 @@ public class UserEntity {
 
     @Column(name = "username", nullable = false)
     private String user_name;
+
+//    multivalued attributes creates as follows
+    @ElementCollection
+    @CollectionTable(
+            name="mobile",
+            joinColumns = @JoinColumn(name = "student_id")
+    )
+    private List<String> mobiles;
 }
