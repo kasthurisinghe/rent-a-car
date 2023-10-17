@@ -4,6 +4,7 @@ package lk.ijse.car_hire.entity;
 
 
 
+import lk.ijse.car_hire.entity.embedded.UserName;
 import lombok.*;
 
 import javax.persistence.*;
@@ -24,8 +25,7 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer user_id;
 
-    @Column(name = "fulName", nullable = false)
-    private String fulName;
+    private UserName fulName;
 
     @Column(name = "nic", nullable = false)
     private String nic;
