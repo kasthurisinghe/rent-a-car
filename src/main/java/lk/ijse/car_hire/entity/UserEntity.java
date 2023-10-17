@@ -7,8 +7,10 @@ package lk.ijse.car_hire.entity;
 import lk.ijse.car_hire.entity.embedded.UserName;
 import lombok.*;
 import org.hibernate.annotations.CollectionId;
+import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -47,4 +49,8 @@ public class UserEntity {
             joinColumns = @JoinColumn(name = "student_id")
     )
     private List<String> mobiles;
+
+    @CreationTimestamp
+    @Column(name = "created_date")
+    private Date createdDate;
 }
